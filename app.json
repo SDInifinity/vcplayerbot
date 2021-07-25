@@ -1,0 +1,43 @@
+{
+    "name": "SDVC Player Bot",
+    "description": "A userbot that can play songs on telegram group's voice call.",
+    "logo": "https://telegra.ph/file/0c2cade28add7a1e81b49.jpg",
+    "keywords": [
+        "Music",
+        "VC Player",
+        "Telegram Bot",
+        "SD Bots"
+    ],
+    "website": "https://t.me/SDBOTs_inifinity",
+    "repository": "https://github.com/sadew451/vcplayerbot",
+    "success_url": "https://t.me/SDBOTs_inifinity",
+    "env": {
+        "STRING_SESSION": {
+            "description": "Your pyrogram string session from https://replit.com/@SpEcHiDe/GenerateStringSession",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
